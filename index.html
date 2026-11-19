@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Alvar — Moda masculina contemporânea</title>
+    <meta name="description" content="Alvar é uma marca fictícia de moda masculina contemporânea: coleções Essentials, Contemporary e After Hours. Protótipo demonstrativo Or7.dev." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#F4F1EB" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Alvar — Vista sua própria direção" />
+    <meta property="og:description" content="Protótipo de flagship digital para moda masculina contemporânea. Experience crafted by Or7.dev." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1619603364937-8d7af41ef206?auto=format&fit=crop&w=1200&h=630&q=70" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1619603364937-8d7af41ef206?auto=format&fit=crop&w=1200&q=72" fetchpriority="high" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('alvar:theme');
+          if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = t;
+        } catch (e) { document.documentElement.dataset.theme = 'light'; }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>Este protótipo precisa de JavaScript habilitado.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
